@@ -1,0 +1,68 @@
+import { data } from "./../../data/data";
+import { FaHtml5 } from "react-icons/fa";
+import { useState } from "react";
+import { useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const { skills } = data;
+export const Skills = ({ reference }) => {
+  return (
+    <div
+      ref={reference}
+      className="flex flex-col justify-center md:flex-row md:justify-between md:p-32 md:h-screen items-center md:snap-start md:overflow-hidden"
+      id="#about"
+    >
+      <div className="flex flex-col justify-center items-center text-center  md:w-[40%] md:text-2xl">
+        <div className="md:box" />
+        <span className="bg-emerald-500 w-40 text-center p-2 rounded-lg m-4 font-bold text-xl  ">
+          About Me
+        </span>
+
+        <div className="self-center flex justify-center md:ju md:relative w-[80%] ">
+          <img
+            src="../aboutpic.png"
+            className=" md:relative md:w-64 md:z-50 rounded-xl h-96 "
+          />
+        </div>
+
+        <h2 className="">
+          <b>Hello There,</b>
+        </h2>
+        <h2 className="uppercase">
+          I'm <b className="text-emerald-500"> Cristian Perez</b>
+        </h2>
+        <h2>{`Front-End Developer & Data Analyst`}</h2>
+        <p className="md:text-left">
+          Data analyst with experience in graphic design, data science,
+          analytics and Business inteligence. with experience building
+          automating reports. Currently expanding my knowledge in Node JS,
+          Python and Angular. I work with HTML5, CSS3, JavaScript, Java and
+          React JS.
+        </p>
+      </div>
+
+      <div className=" flex flex-wrap justify-around w-[100%] md:w-[70%]">
+        <div className="bg-emerald-500 w-40 text-center p-2 rounded-lg m-4 font-bold text-xl ">
+          <h2>My Skills</h2>
+        </div>
+        <div className=" flex flex-wrap justify-center">
+          {skills.map((skill) => (
+            <span
+              key={skill.id}
+              className=" flex items-center w-[25%] rounded-lg md:p-12 md:h-20 border m-2 border-black bg-gradient-to-r from-black via-gray-900 to-black hover:bg-emerald-500 text-white"
+            >
+              <span className=" m-4 flex flex-col items-center ">
+                <img
+                  className="m-2 w-12 h-12"
+                  src={skill.imgUrl}
+                  alt={skill.name}
+                />
+                {skill.name}
+              </span>
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
