@@ -17,11 +17,12 @@ export const Banner = ({ reference }) => {
         className="w-full md:w-auto md:absolute z-0 md:h-[95%] md:right-0 md:top-[8%]"
       />
       <div className="text-2xl md:container md:w-3/5 md:text-5xl animate__animated animate__backInLeft">
-        <h1 className="uppercase">
-          I'm <b className="text-emerald-500"> Cristian Perez</b>
+        <h1 className="">
+          Hello There, <br /> My name is{" "}
+          <b className="text-emerald-500 uppercase">Cristian Perez</b>
         </h1>
         <h2 className="flex">
-          I'm a{" "}
+          {"I'm"}&nbsp;
           <b className="text-emerald-500">
             <Typewriter
               options={{
@@ -29,18 +30,23 @@ export const Banner = ({ reference }) => {
                 loop: true,
                 delay: 40,
                 strings: [
-                  "_Front-End Developer",
-                  "_Data & Reporting Analyst",
-                  "n Excel Expert",
+                  "a Front-End Developer",
+                  "a Data & Reporting Analyst",
+                  "an Excel Expert",
                 ],
               }}
             />
           </b>
         </h2>
-        <p className="my-6">You have a project.</p>
-        <button className="text-3xl p-2 md:p-4  rounded-lg font-bold my-2 bg-emerald-500 md:text-3xl animate-pulse">
+        <p className="my-6">Do you have a project in mind?</p>
+
+        <a
+          className="text-3xl p-2 md:p-4  rounded-lg font-bold my-2 bg-emerald-500 md:text-3xl animate-pulse"
+          target="_blank"
+          href={"https://www.linkedin.com/in/cristian-perez-425ab2237/"}
+        >
           Contact Me
-        </button>
+        </a>
       </div>
     </div>
   );

@@ -56,7 +56,7 @@ export const Contact = ({ reference }) => {
           </button>
         </form>
         <img
-          src="../Public/Portafolio BG-Image.png"
+          src="../Portafolio BG-Image.png"
           alt="Logo"
           className="h-[100%] md:w-[60%]"
         />

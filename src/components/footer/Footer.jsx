@@ -15,11 +15,33 @@ export const Footer = () => {
     >
       <div className="flex flex-col-reverse h-96 md:h-10  bg-black text-white justify-center p-20 items-center">
         <div className="flex">
-          <FaLinkedin size={25} />
-          <FaFacebookSquare size={25} />
-          <FaInstagramSquare size={25} />
-          <FaYoutubeSquare size={25} />
-          <FaGithubSquare size={25} />
+          <a
+            href="https://www.linkedin.com/in/cristian-perez-425ab2237/"
+            target="_blank"
+          >
+            <FaLinkedin size={25} />
+          </a>
+          <a href="https://www.facebook.com/cristian.r.perez3/" target="_blank">
+            <FaFacebookSquare size={25} />
+          </a>
+          <a
+            href="https://www.instagram.com/cristian.r.perez3/?hl=es"
+            target="_blank"
+          >
+            <FaInstagramSquare size={25} />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UC3lZL3S2a2w4rKWSkp7Lopg"
+            target="_blank"
+          >
+            <FaYoutubeSquare size={25} />
+          </a>
+          <a
+            href="https://github.com/PerezCristian-dev/PerezCristian"
+            target="_blank"
+          >
+            <FaGithubSquare size={25} />
+          </a>
         </div>
         <p>
           &copy; 2022 with <b className="text-emerald-500">♥</b>{" "}

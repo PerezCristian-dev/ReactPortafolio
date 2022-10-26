@@ -4,33 +4,33 @@ export const data = {
       id: 1,
       title: "Hangman",
       description: "Hangman is a game created using HTML5, CSS3 and JS",
-      videoURL: "../Public/2.mp4",
+      videoURL: "../2.mp4",
       active: true,
       technologies: [
         {
           id: 1.1,
           tech: "tailwind",
-          url: "../Public/tailwind.svg",
+          url: "../tailwind.svg",
         },
         {
           id: 1.2,
           tech: "react",
-          url: "../Public/ReactJS.svg",
+          url: "../ReactJS.svg",
         },
         {
           id: 1.3,
           tech: "javascript",
-          url: "../Public/js.svg",
+          url: "../js.svg",
         },
         {
           id: 1.4,
           tech: "html",
-          url: "../Public/html.svg",
+          url: "../html.svg",
         },
         {
           id: 1.5,
           tech: "css",
-          url: "../Public/css.svg",
+          url: "../css.svg",
         },
       ],
     },
@@ -39,23 +39,23 @@ export const data = {
       title: "Text Encrypter",
       description:
         "Text Encrypter created using  HTML5, CSS3 and JS, send text messages that only you and your frinds can read and decrypt utilizing the Text Encrypter",
-      videoURL: "../Public/6.mp4",
+      videoURL: "../6.mp4",
       active: true,
       technologies: [
         {
           id: 2.1,
           tech: "javascript",
-          url: "../Public/js.svg",
+          url: "../js.svg",
         },
         {
           id: 2.2,
           tech: "html",
-          url: "../Public/html.svg",
+          url: "../html.svg",
         },
         {
           id: 2.3,
           tech: "css",
-          url: "../Public/css.svg",
+          url: "../css.svg",
         },
       ],
     },
@@ -64,23 +64,23 @@ export const data = {
       title: "Insurance Landing",
       description:
         "Text Encrypter created using  HTML5, CSS3 and JS, send text messages that only you and your frinds can read and decrypt utilizing the Text Encrypter",
-      videoURL: "../Public/8.mp4",
+      videoURL: "../8.mp4",
       active: true,
       technologies: [
         {
           id: 3.1,
           tech: "javascript",
-          url: "../Public/js.svg",
+          url: "../js.svg",
         },
         {
           id: 3.2,
           tech: "html",
-          url: "../Public/html.svg",
+          url: "../html.svg",
         },
         {
           id: 3.3,
           tech: "css",
-          url: "../Public/css.svg",
+          url: "../css.svg",
         },
       ],
     },
@@ -92,131 +92,119 @@ export const data = {
       name: "HTML5",
       description: "",
       percentange: "90%",
-      imgUrl:
-        "https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
+      imgUrl: "../html.png",
     },
     {
       id: 2,
       name: "CSS3",
       description: "",
       percentange: "92%",
-      imgUrl:
-        "https://cdn.icon-icons.com/icons2/1826/PNG/512/4202020css3htmllogosocialsocialmedia-115668_115633.png",
+      imgUrl: "../css.png",
     },
     {
       id: 3,
       name: "JavaScript",
       description: "85",
       percentange: "85%",
-      imgUrl:
-        "https://ayauri29.github.io/Portafolio/images/icon/javascript.jpg",
+      imgUrl: "../js.jpg",
     },
     {
       id: 4,
       name: "Java",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
-      imgUrl: "https://assets.stickpng.com/images/58480979cef1014c0b5e4901.png",
+      imgUrl: "../java.png",
     },
     {
       id: 5,
       name: "React",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "75%",
-      imgUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      imgUrl: "../react.png",
     },
     {
       id: 6,
       name: "Redux",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "75%",
-      imgUrl:
-        "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+      imgUrl: "../redux.png",
     },
     {
       id: 7,
       name: "Tailwind",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
-      imgUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
+      imgUrl: "../tail.png",
     },
     {
       id: 8,
       name: "Bootstrap",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
-      imgUrl:
-        "https://download.logo.wine/logo/Bootstrap_(front-end_framework)/Bootstrap_(front-end_framework)-Logo.wine.png",
+      imgUrl: "../bootstrap.png",
     },
     {
       id: 9,
       name: "Mongo DB",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
-      imgUrl:
-        "https://www.opc-router.de/wp-content/uploads/2021/03/mongodb_thumbnail.png",
+      imgUrl: "../mongo.webp",
     },
     {
       id: 10,
       name: "SQL",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
-      imgUrl:
-        "https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png",
+      imgUrl: "../mysql.png",
     },
     {
       id: 11,
       name: "Jira",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
-      imgUrl:
-        "https://infraestructures.gencat.cat/cau/images/atlassian-jira-logo-large.png",
+      imgUrl: "../jira.png",
     },
     {
       id: 12,
       name: "Firebase",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
-      imgUrl:
-        "https://www.gstatic.com/devrel-devsite/prod/v24d520161c9661e427a3f6fa9973bfca56d0972dca82fa8ef65c709d915e80f3/firebase/images/touchicon-180.png",
+      imgUrl: "../firebase.png",
     },
     {
       id: 13,
       name: "Figma",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
-      imgUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+      imgUrl: "../figma.svg",
     },
     {
       id: 14,
       name: "Photoshop",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
-      imgUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968520.png",
+      imgUrl: "../ps.png",
     },
   ],
   Services: [
     {
       id: 1,
       name: "Front End Developer",
-      description: "Web Site Creating",
+      description: "Web Site Creation",
       imgUrl:
         "http://beproweb.com/wp-content/uploads/2022/04/dynamic-web-pages.jpg",
     },
     {
       id: 2,
       name: "Data Cleansing",
-      description: "Analysis, Reconciliation of Complex Data Sets",
+      description: "Analysis, Cleaning and Reconciliation of Complex Data Sets",
       imgUrl:
         "https://cdn.flatworldsolutions.com/featured-images/data-cleansing-problems-solutions.jpg",
     },
     {
       id: 3,
       name: "Advanced Excel",
-      description: " Spreadsheets & Dashboard Reports",
+      description: "Spreadsheets & Dashboard Reports",
       imgUrl:
         "https://quodem.com/wp-content/uploads/2022/05/que-es-Data-Driven.webp",
     },
@@ -249,7 +237,7 @@ export const data = {
       description: "Computer Science",
       status: "On-going",
       certificate: "",
-      completion: 50,
+      completion: 60,
       imgUrl:
         "https://i.pinimg.com/originals/e6/25/a8/e625a8b75f197bcb8a6066e34135fab9.gif",
     },
@@ -315,7 +303,7 @@ export const data = {
       status: "On-going",
       certificate:
         "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
-      completion: 60,
+      completion: 100,
       imgUrl:
         "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
     },
@@ -335,7 +323,7 @@ export const data = {
       description: "Web Developer Bootcamp",
       status: "On-going",
       certificate: "",
-      completion: 10,
+      completion: 20,
       imgUrl:
         "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
     },

@@ -1,12 +1,9 @@
 import { IconContext } from "react-icons";
-import { useState } from "react";
-import { useEffect, useRef } from "react";
 import {
   FaBriefcase,
   FaEnvelopeOpenText,
   FaGraduationCap,
   FaHome,
-  FaLinkedin,
   FaUser,
 } from "react-icons/fa";
 
@@ -63,7 +60,7 @@ export const SideBar = ({ elements, onscroll }) => {
           </button>
         </NavLink>
 
-        <NavLink to={"education"}>
+        <NavLink to={education}>
           <button
             onClick={() => onscroll(education)}
             className="flex items-center text-white rounded-lg my-2 group md:hover:menuHover2"

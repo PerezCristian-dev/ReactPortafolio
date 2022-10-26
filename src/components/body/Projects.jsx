@@ -51,7 +51,7 @@ export const Projects = ({ reference }) => {
     >
       <div
         ref={reference}
-        className="overflow-hidden text-white md:text-xl bg-project md:px-10 md:h-screen"
+        className="overflow-hidden text-white md:text-xl bg-project md:px-10 md:h-[100%]"
       >
         <h2 className="uppercase font-bold text-center text-emerald-500 text-2xl py-4 md:mt-10">
           Projects

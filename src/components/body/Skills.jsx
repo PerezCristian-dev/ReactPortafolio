@@ -1,10 +1,6 @@
 import { data } from "./../../data/data";
-import { FaHtml5 } from "react-icons/fa";
-import { useState } from "react";
-import { useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-
 const { skills } = data;
+
 export const Skills = ({ reference }) => {
   return (
     <div
@@ -25,19 +21,15 @@ export const Skills = ({ reference }) => {
           />
         </div>
 
-        <h2 className="">
-          <b>Hello There,</b>
-        </h2>
         <h2 className="uppercase">
           I'm <b className="text-emerald-500"> Cristian Perez</b>
         </h2>
-        <h2>{`Front-End Developer & Data Analyst`}</h2>
         <p className="md:text-left">
-          Data analyst with experience in graphic design, data science,
-          analytics and Business inteligence. with experience building
-          automating reports. Currently expanding my knowledge in Node JS,
-          Python and Angular. I work with HTML5, CSS3, JavaScript, Java and
-          React JS.
+          Front-End Developer and Data analyst with experience in graphic
+          design, data science, analytics, business inteligence and building
+          automated reports. Currently expanding my knowledge in Node JS, Python
+          and Angular. I work with HTML5, CSS3, JavaScript, Java, React JS and
+          more.
         </p>
       </div>
 
@@ -49,11 +41,11 @@ export const Skills = ({ reference }) => {
           {skills.map((skill) => (
             <span
               key={skill.id}
-              className=" flex items-center w-[25%] rounded-lg md:p-12 md:h-20 border m-2 border-black bg-gradient-to-r from-black via-gray-900 to-black hover:bg-emerald-500 text-white"
+              className=" flex items-center justify-center w-[25%] rounded-lg md:p-12 md:h-20 border m-2 border-black bg-gradient-to-r from-black via-gray-900 to-black hover:bg-emerald-500 text-white"
             >
-              <span className=" m-4 flex flex-col items-center ">
+              <span className=" m-4 flex flex-col items-center">
                 <img
-                  className="m-2 w-12 h-12"
+                  className="m-2 w-12 h-12 "
                   src={skill.imgUrl}
                   alt={skill.name}
                 />
