@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  .scrollBar {
+    scroll-behavior: smooth;
+  }
+
   .scrollBar::-webkit-scrollbar {
     width: 50px;
   }
