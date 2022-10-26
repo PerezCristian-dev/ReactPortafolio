@@ -17,11 +17,12 @@ export const Services = () => {
 
   return (
     <>
-      <div className="w-full overflow-hidden ">
+      <div className="overflow-hidden">
         <h1 className="font-bold text-3xl m-4 text-emerald-500 uppercase text-center">
           Services & Support
         </h1>
-        <div className="flex"></div>
+      </div>
+      <div className="overflow-x-scroll scrollBar">
         <ServiceCarusel />
       </div>
     </>

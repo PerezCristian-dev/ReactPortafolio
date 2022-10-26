@@ -3,160 +3,188 @@
 @tailwind utilities;
 
 @layer utilities {
+  .scrollBar::-webkit-scrollbar {
+    width: 50px;
+  }
 
-    
-    .dark{
-        background-color: black;
-        color: white;
-        transition: all 1s ease-in-out;
+  .scrollBar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  .scrollBar::-webkit-scrollbar-thumb {
+    background: rgb(16 185 129);
+    border-radius: 10px;
+  }
+
+  .scrollBar::-webkit-scrollbar-thumb:hover {
+    background: rgb(0 130 129);
+  }
+
+  .dark {
+    background-color: black;
+    color: white;
+    transition: all 1s ease-in-out;
+  }
+
+  .light {
+    background-color: FAFAFA;
+    color: black;
+    transition: all 1s ease-in-out;
+  }
+
+  .animateleft {
+    transition: all 1s ease-in-out;
+    animation: leftIn 1s;
+  }
+
+  @keyframes leftIn {
+    0% {
+      transform: translate(-30%);
     }
-
-
-    
-    .light{
-        background-color: FAFAFA;
-        color: black;
-        transition: all 1s ease-in-out;
+    100% {
+      transform: translate(-8%);
     }
+  }
 
-    .animateleft{
-        transition: all 1s ease-in-out;
-        animation: leftIn 1s;
+  .invisible {
+    display: "none";
+  }
+
+  .bg-img {
+    background-image: url("../Public/Circuit Board.svg");
+    background-repeat: no-repeat;
+    background-color: #292929;
+    background-size: cover;
+    background-position: bottom right;
+  }
+  .react-icon {
+    height: 50px;
+    width: 50px;
+    color: white;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    animation: rotation 1s;
+    transition: all 0.8s;
+    border-radius: 20%;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0);
     }
-
-    @keyframes leftIn {
-        0% {transform: translate(-30%);}
-        100% {transform: translate(-8%);}
+    to {
+      transform: rotate(360deg);
     }
+  }
 
-    .invisible{
-        display: 'none',
+  .bg-black-gradient {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(75, 75, 75, 1) 47%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  .bg-project {
+    background-repeat: no-repeat;
+    background-color: #292929;
+    background-size: cover;
+    background-position: bottom right;
+    background-image: url("../Public/Circuit Board.svg");
+  }
+  .bg-sections {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-image: url("../Public/Polygon Luminary.svg");
+  }
+  .scrollMain {
+    scroll-snap-align: start;
+  }
+  .scrollToPage {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+
+  .menuHover {
+    display: flex;
+    background-color: black;
+    height: 50px;
+    border-radius: 0% 15% 15% 0%;
+    padding: 20px;
+    opacity: 1;
+
+    transition: all 1s ease-in-out;
+    transform: translate(-8%);
+    animation: entrance 1s;
+  }
+
+  .menuHover2 {
+    display: flex;
+    transition: all 1s ease-in-out;
+    animation: entrance2 0.8s;
+  }
+  .activated {
+    display: flex;
+    color: rgb(16 185 129);
+  }
+
+  .fillingAnimate {
+    animation: filling 2s ease-in-out;
+  }
+
+  @keyframes filling {
+    0% {
+      width: 0;
     }
+  }
 
-    .bg-img{
-        background-image: url("../Public/Circuit Board.svg");
-        background-repeat: no-repeat;
-        background-color: #292929;
-        background-size:cover;
-        background-position: bottom right;
+  @keyframes entrance {
+    0% {
+      transform: translate(-30%);
     }
-    .react-icon{
-        height:50px;
-        width: 50px;
-        color: white;
-        padding: 10px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-        animation: rotation 1s;
-        transition: all 0.8s;
-        border-radius: 20%;
+    100% {
+      transform: translate(-8%);
     }
+  }
 
-    @keyframes rotation{
-        from {transform: rotate(0);}
-        to {transform: rotate(360deg);}
+  @keyframes entrance2 {
+    0% {
+      transform: translate(-2%);
     }
-
-
-    .bg-black-gradient{
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(75,75,75,1) 47%, rgba(0,0,0,1) 100%)
+    100% {
+      transform: translate(1%);
     }
+  }
 
-    .bg-project{
-
-        background-repeat: no-repeat;
-        background-color: #292929;
-        background-size:cover;
-        background-position: bottom right;
-        background-image: url("../Public/Circuit Board.svg");
+  @keyframes hidding {
+    0% {
+      transform: translate(-8%);
+      opacity: 1;
     }
-    .bg-sections{
-
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-image: url("../Public/Polygon Luminary.svg");
+    100% {
+      transform: translate(-100%);
+      font-size: 0;
+      width: 2;
+      opacity: 1;
     }
-    .scrollMain{
-        scroll-snap-align: start;
-    }
-    .scrollToPage{
-        scroll-snap-type: y mandatory;
-        overflow-y:scroll;
-    }
+  }
 
+  .oculto {
+    opacity: 0;
+    display: flex;
+    background-color: black;
+    height: 50px;
 
+    border-radius: 0% 15% 15% 0%;
+    padding: 20px;
+    transform: translate(-30%);
+    animation: hidding 1.5s ease-in-out;
+  }
 
-    .menuHover{
-        display:flex;
-        background-color: black;
-        height:50px;
-        border-radius: 0% 15% 15% 0%;
-        padding: 20px;
-        opacity: 1.0;
-     
-        transition: all 1s ease-in-out;
-        transform: translate(-8%);
-        animation: entrance 1s;
-    }
-
-    .menuHover2{
-        display:flex;
-        transition: all 1s ease-in-out;
-        animation: entrance2 0.8s;
-    }
-    .activated{
-        display:flex;
-        color: rgb(16 185 129);
-        
-    }
-
-    .fillingAnimate{
-   
-        animation: filling 2s ease-in-out;
-    }
-
-
-
-    @keyframes filling {
-        0%{width: 0;}        
-    }
-
-    @keyframes entrance{
-        0% {transform: translate(-30%);}
-        100% {transform: translate(-8%);}
-    }
-    
-    @keyframes entrance2{
-        0% {transform: translate(-2%);}
-        100% {transform: translate(1%);}
-    }
-
-    @keyframes hidding {
-        0%{transform: translate(-8%);
-            opacity:1 ;}
-        100% {transform: translate(-100%);
-            font-size: 0;
-            width: 2;
-            opacity: 1;
-        }
-    }
-
-    .oculto{
-        opacity: 0;
-        display:flex;
-        background-color: black;
-        height:50px;
-       
-        border-radius: 0% 15% 15% 0%;
-        padding: 20px;
-        transform: translate(-30%);
-        animation: hidding 1.5s ease-in-out;   
-    }
-
-    .mostar{
-        opacity: 1;
-    }
- 
-    
+  .mostar {
+    opacity: 1;
+  }
 }
-
