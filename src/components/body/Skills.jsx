@@ -24,7 +24,7 @@ export const Skills = ({ reference }) => {
         <h2 className="uppercase">
           I'm <b className="text-emerald-500"> Cristian Perez</b>
         </h2>
-        <p className="md:text-left">
+        <p className="text-sm md:text-md md:text-left px-4">
           Front-End Developer and Data analyst with experience in graphic
           design, data science, analytics, business inteligence and building
           automated reports. Currently expanding my knowledge in Node JS, Python
@@ -43,9 +43,9 @@ export const Skills = ({ reference }) => {
               key={skill.id}
               className=" flex items-center justify-center w-[25%] rounded-lg md:p-12 md:h-20 border m-2 border-black bg-gradient-to-r from-black via-gray-900 to-black hover:bg-emerald-500 text-white"
             >
-              <span className=" m-4 flex flex-col items-center">
+              <span className=" m-2 md:m-4 flex flex-col items-center text-sm md:text-md">
                 <img
-                  className="m-2 w-12 h-12 "
+                  className="w-10 h-10 p-1 md:m-2 md:w-12 md:h-12 "
                   src={skill.imgUrl}
                   alt={skill.name}
                 />

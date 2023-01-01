@@ -37,7 +37,7 @@ export const Banner = ({ reference }) => {
           </h2>
         <p className="my-6">Do you have a project in mind?</p>
         <a
-          className="text-1xl p-2 md:px-10 md:mt-4 rounded-lg font-bold  bg-emerald-500 md:text-1xl animate-pulse"
+          className="text-1xl p-2 md:px-10 md:mt-4 rounded-lg font-bold  bg-emerald-500 md:text-3xl animate-pulse"
           target="_blank"
           href={"https://www.linkedin.com/in/cristian-perez-425ab2237/"}
         >
