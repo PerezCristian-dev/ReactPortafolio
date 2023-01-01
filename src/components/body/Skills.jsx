@@ -24,7 +24,7 @@ export const Skills = ({ reference }) => {
         <h2 className="uppercase">
           I'm <b className="text-emerald-500"> Cristian Perez</b>
         </h2>
-        <p className="text-sm md:text-md md:text-left px-4">
+        <p className="text-sm md:text-xl px-4">
           Front-End Developer and Data analyst with experience in graphic
           design, data science, analytics, business inteligence and building
           automated reports. Currently expanding my knowledge in Node JS, Python
