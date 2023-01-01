@@ -2,85 +2,165 @@ export const data = {
   projects: [
     {
       id: 1,
-      title: "Hangman",
-      description: "Hangman is a game created using HTML5, CSS3 and JS",
-      videoURL: "../2.mp4",
+      title: "Alura BarberShop",
+      description: "Website created using HTML5, CSS3 and JS as part of my learning curve.",
+      videoURL: "../1.mp4",
       active: true,
       technologies: [
         {
           id: 1.1,
-          tech: "tailwind",
-          url: "../tailwind.svg",
-        },
-        {
-          id: 1.2,
-          tech: "react",
-          url: "../ReactJS.svg",
-        },
-        {
-          id: 1.3,
-          tech: "javascript",
-          url: "../js.svg",
-        },
-        {
-          id: 1.4,
-          tech: "html",
+          tech: "HTML5",
           url: "../html.svg",
         },
         {
-          id: 1.5,
-          tech: "css",
+          id: 1.2,
+          tech: "CSS3",
           url: "../css.svg",
+        },
+        {
+          id: 1.3,
+          tech: "JS",
+          url: "../js.svg",
         },
       ],
     },
     {
       id: 2,
-      title: "Text Encrypter",
+      title: "Insurance Landing Page",
       description:
-        "Text Encrypter created using  HTML5, CSS3 and JS, send text messages that only you and your frinds can read and decrypt utilizing the Text Encrypter",
-      videoURL: "../6.mp4",
-      active: true,
+        "WebApp created using HTML5, CSS3 and JS, using some libreries such as React, Tailwind and Material UI for animation we use React Motion.",
+      videoURL: "../8.mp4",
+      active: false,
       technologies: [
         {
           id: 2.1,
-          tech: "javascript",
-          url: "../js.svg",
-        },
-        {
-          id: 2.2,
-          tech: "html",
+          tech: "HTML5",
           url: "../html.svg",
         },
         {
-          id: 2.3,
-          tech: "css",
+          id: 2.2,
+          tech: "CSS3",
           url: "../css.svg",
+        },
+        {
+          id: 2.3,
+          tech: "JavaScript",
+          url: "../js.svg",
+        },
+        {
+          id: 2.4,
+          tech: "React",
+          url: "../reactJS.svg",
+        },
+        {
+          id: 2.5,
+          tech: "Redux",
+          url: "../redux.png",
+        },
+        {
+          id: 2.6,
+          tech: "Tailwind",
+          url: "../tailwind.svg",
         },
       ],
     },
     {
       id: 3,
-      title: "Insurance Landing",
+      title: "App Store",
       description:
-        "Text Encrypter created using  HTML5, CSS3 and JS, send text messages that only you and your frinds can read and decrypt utilizing the Text Encrypter",
-      videoURL: "../8.mp4",
-      active: true,
+        "App Store created using HTML5, CSS3, JavaScript appliying Grid and Flexbox methods.",
+      videoURL: "../3.mp4",
+      active: false,
       technologies: [
         {
           id: 3.1,
-          tech: "javascript",
-          url: "../js.svg",
-        },
-        {
-          id: 3.2,
-          tech: "html",
+          tech: "html5",
           url: "../html.svg",
         },
         {
-          id: 3.3,
-          tech: "css",
+          id: 3.2,
+          tech: "css3",
           url: "../css.svg",
+        },
+        {
+          id: 3.3,
+          tech: "JavaScript",
+          url: "../js.svg",
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: "Fruta&Fruto Landing Page",
+      description:
+        "Website created using HTML5, CSS3, JavaScript appliying Grid and Flexbox methods.",
+      videoURL: "../4.mp4",
+      active: false,
+      technologies: [
+        {
+          id: 3.1,
+          tech: "html5",
+          url: "../html.svg",
+        },
+        {
+          id: 3.2,
+          tech: "css3",
+          url: "../css.svg",
+        },
+        {
+          id: 3.3,
+          tech: "JavaScript",
+          url: "../js.svg",
+        },
+      ],
+    },
+    {
+      id: 5,
+      title: "Mini Alura Site",
+      description:
+        "WebSite created using HTML5, CSS3, JavaScript appliying Grid and Flexbox methods.",
+      videoURL: "../5.mp4",
+      active: false,
+      technologies: [
+        {
+          id: 3.1,
+          tech: "html5",
+          url: "../html.svg",
+        },
+        {
+          id: 3.2,
+          tech: "css3",
+          url: "../css.svg",
+        },
+        {
+          id: 3.3,
+          tech: "JavaScript",
+          url: "../js.svg",
+        },
+      ],
+    },
+    {
+      id: 6,
+      title: "Apeperia",
+      description:
+        "WebSite created using HTML5, CSS3, JavaScript appliying Grid and Flexbox methods.",
+      videoURL: "../7.mp4",
+      active: false,
+      technologies: [
+        {
+          id: 3.1,
+          tech: "html5",
+          url: "../html.svg",
+        },
+        {
+          id: 3.2,
+          tech: "css3",
+          url: "../css.svg",
+        },
+        {
+          id: 3.3,
+          tech: "JavaScript",
+          url: "../js.svg",
         },
       ],
     },
@@ -145,7 +225,7 @@ export const data = {
     },
     {
       id: 9,
-      name: "Mongo DB",
+      name: "MongoDB",
       description: "Java IO, Streams, Reader, Writers, Collections",
       percentange: "65%",
       imgUrl: "../mongo.webp",
@@ -237,7 +317,7 @@ export const data = {
       description: "Computer Science",
       status: "On-going",
       certificate: "",
-      completion: 60,
+      completion: 70,
       imgUrl:
         "https://i.pinimg.com/originals/e6/25/a8/e625a8b75f197bcb8a6066e34135fab9.gif",
     },
@@ -300,7 +380,7 @@ export const data = {
       id: 7,
       institution: "UDEMY",
       description: "React: Expert",
-      status: "On-going",
+      status: "Completed",
       certificate:
         "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
       completion: 100,
@@ -313,7 +393,7 @@ export const data = {
       description: "React: PRO",
       status: "On-going",
       certificate: "",
-      completion: 10,
+      completion: 50,
       imgUrl:
         "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
     },
@@ -321,9 +401,9 @@ export const data = {
       id: 9,
       institution: "UDEMY",
       description: "Web Developer Bootcamp",
-      status: "On-going",
+      status: "Completed",
       certificate: "",
-      completion: 20,
+      completion: 100,
       imgUrl:
         "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
     },

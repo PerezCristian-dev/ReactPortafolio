@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer utilities {
+
+  
+
   .scrollBar {
     scroll-behavior: smooth;
   }
@@ -56,7 +59,7 @@
   }
 
   .bg-img {
-    background-image: url("../Public/Circuit Board.svg");
+    background-image: url("../Circuit Board.svg");
     background-repeat: no-repeat;
     background-color: #292929;
     background-size: cover;
@@ -97,12 +100,12 @@
     background-color: #292929;
     background-size: cover;
     background-position: bottom right;
-    background-image: url("../Public/Circuit Board.svg");
+    background-image: url("../Circuit Board.svg");
   }
   .bg-sections {
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-image: url("../Public/Polygon Luminary.svg");
+    background-image: url("../Polygon Luminary.svg");
   }
   .scrollMain {
     scroll-snap-align: start;
@@ -191,4 +194,7 @@
   .mostar {
     opacity: 1;
   }
+
+
 }
+

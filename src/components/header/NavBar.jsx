@@ -20,7 +20,7 @@ export const NavBar = () => {
   return (
     <>
       <div className="flex-col md:flex-row md:absolute z-10 p-10 md:py-10 md:px-36 w-full flex justify-between items-center animate__animated animate__backInDown)">
-        <h1 className="font-bold text-emerald-500 text-3xl my-2">
+        <h1 className="hidden md:block font-bold text-emerald-500 text-3xl my-2">
           {"<dev>CRISTIAN</dev>"}
         </h1>
         {

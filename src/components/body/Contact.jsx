@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+import { SubmitedMessage } from "../SubmitedMessage";
 
 export const Contact = ({ reference }) => {
+
+  const [submited, setSubmited] = useState(false)
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const handleChange = ({ target }) => {
@@ -12,6 +16,26 @@ export const Contact = ({ reference }) => {
     });
   };
 
+
+  const newform = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_rx6yp75', 'template_quptqrp', newform.current, 'j1aIwyxn4IGORSgLX')
+      .then((result) => {
+
+        if(result.text === "OK"){
+          setSubmited(true);
+        }
+          console.log(result.text);
+
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
   return (
     <div
       ref={reference}
@@ -20,15 +44,16 @@ export const Contact = ({ reference }) => {
       <h2 className="uppercase font-bold text-emerald-500 text-xl md:text-3xl py-4 md:h-auto">
         Contact Me
       </h2>
-      <div className="md:flex justify-center p-4">
-        <form action="" className="flex flex-col w-[100%]">
+      <div className="md:flex justify-center items-center p-4">
+        {!submited?
+        <form ref={newform} action="submit" onSubmit={sendEmail} className="flex flex-col w-[100%]">
           <label htmlFor="name">Your Name</label>
           <input
             name="name"
             type="text"
             value={form.name}
             onChange={handleChange}
-            className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500"
+            className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 md:mb-4"
           />
           <label htmlFor="email">Your Email</label>
           <input
@@ -36,7 +61,7 @@ export const Contact = ({ reference }) => {
             type="email"
             value={form.email}
             onChange={handleChange}
-            className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500"
+            className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 md:mb-4"
           />
           <label htmlFor="fullname">Your Message</label>
           <textarea
@@ -46,7 +71,7 @@ export const Contact = ({ reference }) => {
             value={form.message}
             onChange={handleChange}
             rows="10"
-            className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500"
+            className="h-24 md:h-[40%] text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 md:mb-4"
           />
           <button
             type="submit"
@@ -55,6 +80,7 @@ export const Contact = ({ reference }) => {
             Send Message
           </button>
         </form>
+        : <SubmitedMessage />}
         <img
           src="../Portafolio BG-Image.png"
           alt="Logo"

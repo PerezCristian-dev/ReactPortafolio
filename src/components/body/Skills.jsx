@@ -58,3 +58,5 @@ export const Skills = ({ reference }) => {
     </div>
   );
 };
+
+export default Skills;

@@ -32,14 +32,17 @@ export const SideBar = ({ elements, onscroll }) => {
           }
         </button>
 
-        <NavLink to={"about"}>
+        <NavLink to={"about"}
+   
+        >
           <button
             onClick={() => onscroll(about)}
-            className="flex items-center text-white rounded-lg my-2 group md:hover:menuHover2 md:flex"
+            
+            className={`flex items-center text-emerald-500 rounded-lg my-2 group md:hover:menuHover2 md:flex`}
           >
             <FaUser />
             {
-              <h2 className=" hidden transition-all items-center md:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
+              <h2 className={` hidden transition-all items-center md:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0`}>
                 About Me
               </h2>
             }
