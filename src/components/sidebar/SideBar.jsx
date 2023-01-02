@@ -19,14 +19,14 @@ export const SideBar = ({ elements, onscroll }) => {
           "react-icon group-hover:text-emerald-500 bg-black relative z-50",
       }}
     >
-      <div className="bg-black md:bg-transparent w-full md:w-auto justify-between flex md:block fixed bottom-0 z-50 p-4 md:m-4 animate__animated animate__backInUp">
+      <div className="bg-black xl:bg-transparent w-full xl:w-auto justify-between flex xl:block fixed bottom-0 z-50 p-4 xl:m-4 animate__animated animate__backInUp">
         <button
           onClick={() => onscroll(home)}
-          className="flex items-center text-white rounded-lg md:my-2 group md:hover:menuHover2"
+          className="flex items-center text-white rounded-lg xl:my-2 group xl:hover:menuHover2"
         >
           <FaHome />
           {
-            <h2 className=" hidden transition-all items-center md:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
+            <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
               Home
             </h2>
           }
@@ -38,11 +38,11 @@ export const SideBar = ({ elements, onscroll }) => {
           <button
             onClick={() => onscroll(about)}
             
-            className={`flex items-center text-emerald-500 rounded-lg my-2 group md:hover:menuHover2 md:flex`}
+            className={`flex items-center text-emerald-500 rounded-lg my-2 group xl:hover:menuHover2 xl:flex`}
           >
             <FaUser />
             {
-              <h2 className={` hidden transition-all items-center md:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0`}>
+              <h2 className={` hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0`}>
                 About Me
               </h2>
             }
@@ -52,11 +52,11 @@ export const SideBar = ({ elements, onscroll }) => {
         <NavLink to={"projects"}>
           <button
             onClick={() => onscroll(projects)}
-            className="flex items-center text-white rounded-lg my-2 group md:hover:menuHover2"
+            className="flex items-center text-white rounded-lg my-2 group xl:hover:menuHover2"
           >
             <FaBriefcase />
             {
-              <h2 className=" hidden transition-all items-center md:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
+              <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
                 Projects
               </h2>
             }
@@ -66,11 +66,11 @@ export const SideBar = ({ elements, onscroll }) => {
         <NavLink to={education}>
           <button
             onClick={() => onscroll(education)}
-            className="flex items-center text-white rounded-lg my-2 group md:hover:menuHover2"
+            className="flex items-center text-white rounded-lg my-2 group xl:hover:menuHover2"
           >
             <FaGraduationCap />
             {
-              <h2 className=" hidden transition-all items-center md:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
+              <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
                 Education
               </h2>
             }
@@ -79,11 +79,11 @@ export const SideBar = ({ elements, onscroll }) => {
 
         <button
           onClick={() => onscroll(contact)}
-          className="flex items-center text-white rounded-lg my-2 group md:hover:menuHover2"
+          className="flex items-center text-white rounded-lg my-2 group xl:hover:menuHover2"
         >
           <FaEnvelopeOpenText />
           {
-            <h2 className=" hidden transition-all items-center md:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
+            <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
               Contact Me
             </h2>
           }

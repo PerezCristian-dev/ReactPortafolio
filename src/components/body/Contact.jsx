@@ -39,12 +39,12 @@ export const Contact = ({ reference }) => {
   return (
     <div
       ref={reference}
-      className="flex flex-col  justify-around bg-project  p-4 md:p-28 text-white items-center"
+      className="flex flex-col  justify-around bg-project  p-4 xl:p-28 text-white items-center"
     >
-      <h2 className="uppercase font-bold text-emerald-500 text-xl md:text-3xl py-4 md:h-auto">
+      <h2 className="uppercase font-bold text-emerald-500 text-xl xl:text-3xl py-4 xl:h-auto">
         Contact Me
       </h2>
-      <div className="md:flex justify-center items-center p-4">
+      <div className="xl:flex justify-center items-center p-4">
         {!submited?
         <form ref={newform} action="submit" onSubmit={sendEmail} className="flex flex-col w-[100%]">
           <label htmlFor="name">Your Name</label>
@@ -53,7 +53,7 @@ export const Contact = ({ reference }) => {
             type="text"
             value={form.name}
             onChange={handleChange}
-            className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 md:mb-4"
+            className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 xl:mb-4"
           />
           <label htmlFor="email">Your Email</label>
           <input
@@ -61,7 +61,7 @@ export const Contact = ({ reference }) => {
             type="email"
             value={form.email}
             onChange={handleChange}
-            className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 md:mb-4"
+            className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 xl:mb-4"
           />
           <label htmlFor="fullname">Your Message</label>
           <textarea
@@ -71,7 +71,7 @@ export const Contact = ({ reference }) => {
             value={form.message}
             onChange={handleChange}
             rows="10"
-            className="h-24 md:h-[40%] text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 md:mb-4"
+            className="h-24 xl:h-[40%] text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 xl:mb-4"
           />
           <button
             type="submit"
@@ -84,7 +84,7 @@ export const Contact = ({ reference }) => {
         <img
           src="../Portafolio BG-Image.png"
           alt="Logo"
-          className="h-[100%] md:w-[60%]"
+          className="h-[100%] xl:w-[60%]"
         />
       </div>
     </div>

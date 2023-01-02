@@ -11,12 +11,12 @@ export const Projects = ({ reference }) => {
   return (
     <div
       ref={reference}
-      className="p-2  md:flex md:flex-col md:items-center overflow-hidden text-white md:text-xl bg-project md:px-10 h-[100% - 20px] md: py-10"
+      className="p-2  xl:flex xl:flex-col xl:items-center overflow-hidden text-white xl:text-xl bg-project xl:px-10 h-[100% - 20px] xl: py-10"
     >
       <h2 className="uppercase font-bold text-center text-emerald-500 text-2xl">
         Portafolio
       </h2>
-      <p className="hidden md:block text-center leading-none">
+      <p className="hidden xl:block text-center leading-none">
         Here you will find a few of the projects I've worked on
       </p>
 
@@ -25,10 +25,10 @@ export const Projects = ({ reference }) => {
           <div
             key={project.id}
             className={
-              "flex flex-col items-center md:flex-row md:justify-center md:w-[75%]"
+              "flex flex-col items-center xl:flex-row xl:justify-center xl:w-[75%]"
             }
           >
-            <div className="flex flex-col justify-center items-center text-center py-4 px-2 md:w-1/2 md:p-32">
+            <div className="flex flex-col justify-center items-center text-center py-4 px-2 xl:w-1/2 xl:p-32">
               <motion.h1
                 initial={{ x: 0, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -37,7 +37,7 @@ export const Projects = ({ reference }) => {
                   x: { type: "spring", stiffness: 300, damping: 30 },
                   opacity: { duration: 0.2 },
                 }}
-                className="text-emerald-500 font-bold uppercase md:text-xl md:mb-4"
+                className="text-emerald-500 font-bold uppercase xl:text-xl xl:mb-4"
               >
                 {project.title}
               </motion.h1>
@@ -57,15 +57,15 @@ export const Projects = ({ reference }) => {
                 key={new Date()}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-2 md:mb-10 bg-emerald-500 rounded-lg w-40 hover:bg-black hover:text-white animate-pulse"
+                className="p-2 xl:mb-10 bg-emerald-500 rounded-lg w-40 hover:bg-black hover:text-white animate-pulse"
               >
                 Learn More
               </motion.button>
             </div>
 
-            <div className="flex flex-col md:w-1/2 bg-project items-center justify-between rounded-l-3xl md:h-[850px] h-[450px]">
+            <div className="flex flex-col xl:w-1/2 bg-project items-center justify-between rounded-l-3xl xl:h-[850px] h-[450px]">
               <h2 className="uppercase text-emerald-500">Technologies</h2>
-              <div className="md:p-10 flex animate-pulse ease-in-out duration-1000">
+              <div className="xl:p-10 flex animate-pulse ease-in-out duration-1000">
                 {project.technologies.map((tech) => (
                   <motion.span
                     initial={{ x: -200, opacity: 0 }}
@@ -74,9 +74,9 @@ export const Projects = ({ reference }) => {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     key={tech.id}
-                    className="m-2 p-2 md:p-4 rounded-lg  items-center  hover:bg-emerald-500 uppercase bg-black animate__animated animate__flipInY"
+                    className="m-2 p-2 xl:p-4 rounded-lg  items-center  hover:bg-emerald-500 uppercase bg-black animate__animated animate__flipInY"
                   >
-                    {<img src={tech.url} className=" w-4 md:w-6 md:h-6" />}
+                    {<img src={tech.url} className=" w-4 xl:w-6 xl:h-6" />}
                   </motion.span>
                 ))}
               </div>
@@ -88,7 +88,7 @@ export const Projects = ({ reference }) => {
                 autoPlay={true}
                 muted
                 controls
-                className="overflow-hidden md:rounded-3xl w-[100vw] md:w-auto transition-opacity animate__animated animate__fadeInRight  shadow-lg shadow-emerald-700 "
+                className="overflow-hidden xl:rounded-3xl w-[100vw] xl:w-auto transition-opacity animate__animated animate__fadeInRight  shadow-lg shadow-emerald-700 "
               ></motion.video>
 
               <div className="m-10 flex items-center overflow-hidden">
@@ -96,14 +96,14 @@ export const Projects = ({ reference }) => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={() => handleBackward(project.id)}
-                  className={"bg-black h-10 md:h-[50px] md:w-[50px] px-4 rounded-xl hover:text-emerald-500"}
+                  className={"bg-black h-10 xl:h-[50px] xl:w-[50px] px-4 rounded-xl hover:text-emerald-500"}
                 >
                   <FaAngleLeft />
                 </motion.button>
 
                 {slide.map((project) => (
                   <div
-                    className={`${project.active ? "bg-emerald-500" : "bg-black"} w-4 h-4 md:w-10 md:h-10 mx-[7px] my-0 md:mx-2  rounded-md md:rounded-lg hover:bg-emerald-500`}
+                    className={`${project.active ? "bg-emerald-500" : "bg-black"} w-4 h-4 xl:w-10 xl:h-10 mx-[7px] my-0 xl:mx-2  rounded-md xl:rounded-lg hover:bg-emerald-500`}
                     key={project.id}
                     onClick={() => handleSlideClick(project.id)}
                   ></div>
@@ -113,7 +113,7 @@ export const Projects = ({ reference }) => {
                   whileTap={{ scale: 0.9 }}
                   onClick={() => handleForward(project.id)}
                   className={
-                    "bg-black h-10 md:h-[50px] md:w-[50px] px-4 rounded-xl hover:text-emerald-500"
+                    "bg-black h-10 xl:h-[50px] xl:w-[50px] px-4 rounded-xl hover:text-emerald-500"
                   }
                 >
                   <FaAngleRight />
