@@ -63,7 +63,7 @@ export const Projects = ({ reference }) => {
               </motion.button>
             </div>
 
-            <div className="flex flex-col md:w-1/2 bg-project items-center justify-between rounded-l-3xl md:h-[850px] h-[500px]">
+            <div className="flex flex-col md:w-1/2 bg-project items-center justify-between rounded-l-3xl md:h-[850px] h-[450px]">
               <h2 className="uppercase text-emerald-500">Technologies</h2>
               <div className="md:p-10 flex animate-pulse ease-in-out duration-1000">
                 {project.technologies.map((tech) => (
