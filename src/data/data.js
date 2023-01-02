@@ -28,7 +28,7 @@ export const data = {
       id: 2,
       title: "Insurance Landing Page",
       description:
-        "WebApp created using HTML5, CSS3 and JS, using some libreries such as React, Tailwind and Material UI for animation we use React Motion.",
+        "WebApp created using HTML5, CSS3 and JS, using some libreries such as React, Tailwind and Material UI.",
       videoURL: "../8.mp4",
       active: false,
       technologies: [

@@ -63,7 +63,7 @@ export const Projects = ({ reference }) => {
               </motion.button>
             </div>
 
-            <div className="flex flex-col md:w-1/2 bg-project items-center justify-between rounded-l-3xl md:h-[650px]">
+            <div className="flex flex-col md:w-1/2 bg-project items-center justify-between rounded-l-3xl md:h-[850px] h-[500px]">
               <h2 className="uppercase text-emerald-500">Technologies</h2>
               <div className="md:p-10 flex animate-pulse ease-in-out duration-1000">
                 {project.technologies.map((tech) => (
@@ -88,7 +88,7 @@ export const Projects = ({ reference }) => {
                 autoPlay={true}
                 muted
                 controls
-                className="overflow-hidden md:rounded-3xl w-[100vw] md:w-[85%] transition-opacity animate__animated animate__fadeInRight  shadow-lg shadow-emerald-700 "
+                className="overflow-hidden md:rounded-3xl w-[100vw] md:w-auto transition-opacity animate__animated animate__fadeInRight  shadow-lg shadow-emerald-700 "
               ></motion.video>
 
               <div className="m-10 flex items-center overflow-hidden">
@@ -96,18 +96,14 @@ export const Projects = ({ reference }) => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={() => handleBackward(project.id)}
-                  className={
-                    "bg-black h-10 md:h-[50px] md:w-[50px] px-4 rounded-xl hover:text-emerald-500"
-                  }
+                  className={"bg-black h-10 md:h-[50px] md:w-[50px] px-4 rounded-xl hover:text-emerald-500"}
                 >
                   <FaAngleLeft />
                 </motion.button>
 
                 {slide.map((project) => (
                   <div
-                    className={` ${
-                      project.active ? "bg-emerald-500" : "bg-black"
-                    }  w-4 h-4 md:w-10 md:h-10 mx-[7px] my-0 md:mx-2  rounded-md md:rounded-lg hover:bg-emerald-500`}
+                    className={`${project.active ? "bg-emerald-500" : "bg-black"} w-4 h-4 md:w-10 md:h-10 mx-[7px] my-0 md:mx-2  rounded-md md:rounded-lg hover:bg-emerald-500`}
                     key={project.id}
                     onClick={() => handleSlideClick(project.id)}
                   ></div>
