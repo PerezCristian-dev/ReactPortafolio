@@ -1,74 +1,12 @@
-import { IconContext } from "react-icons";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+
 import { data } from "./../../data/data";
-import { useState } from "react";
-import { useEffect } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { ConstructionOutlined } from "@mui/icons-material";
+import { UseSlider } from "../../hooks/UseSlider";
 
 export const Projects = ({ reference }) => {
-  const [slide, setSlide] = useState([...data.projects]);
 
-  const handleBackward = (id) => {
-    let counter = id - 1;
-
-    setSlide((prev) => {
-      if (counter <= 0) {
-        const maxSlide = slide.length - 1;
-        const newState = [...prev];
-        newState[maxSlide] = { ...prev[maxSlide], active: true };
-        newState[counter] = { ...prev[counter], active: false };
-        return newState;
-      } else {
-        const newState = [...prev];
-        newState[counter] = { ...prev[counter], active: false };
-        newState[counter - 1] = { ...prev[counter - 1], active: true };
-        return newState;
-      }
-    });
-  };
-
-  const handleForward = (id) => {
-    let counter = id - 1;
-    setSlide((prev) => {
-      if (counter >= slide.length - 1) {
-        const newState = [...prev];
-        newState[0] = { ...prev[0], active: true };
-        newState[counter] = { ...prev[counter], active: false };
-        return newState;
-      } else {
-        const newState = [...prev];
-        newState[counter] = { ...prev[counter], active: false };
-        newState[counter + 1] = { ...prev[counter + 1], active: true };
-        return newState;
-      }
-    });
-  };
-
-  const handleAuto = () => {
-    const activeSlide = slide.filter((project) => project.active === true);
-    const { id } = activeSlide[0];
-    handleForward(id);
-  };
-
-  const handleSlideClick = (id) => {
-    let counter = id - 1;
-
-    console.log(counter);
-    setSlide((prev) => {
-      const partialState = prev.map((item) => ({ ...item, active: false }));
-      const newState = [...partialState];
-      newState[counter] = { ...newState[counter], active: true };
-      return newState;
-    });
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleAuto();
-    }, 10000);
-    return () => clearInterval(interval);
-  }, [slide]);
+  const { slide, handleBackward, handleForward, handleSlideClick } = UseSlider(data);
 
   return (
     <div
@@ -81,6 +19,7 @@ export const Projects = ({ reference }) => {
       <p className="hidden md:block text-center leading-none">
         Here you will find a few of the projects I've worked on
       </p>
+
       {slide.map((project) =>
         project.active ? (
           <div
@@ -123,6 +62,7 @@ export const Projects = ({ reference }) => {
                 Learn More
               </motion.button>
             </div>
+
             <div className="flex flex-col md:w-1/2 bg-project items-center justify-between rounded-l-3xl md:h-[650px]">
               <h2 className="uppercase text-emerald-500">Technologies</h2>
               <div className="md:p-10 flex animate-pulse ease-in-out duration-1000">
@@ -150,6 +90,7 @@ export const Projects = ({ reference }) => {
                 controls
                 className="overflow-hidden md:rounded-3xl w-[100vw] md:w-[85%] transition-opacity animate__animated animate__fadeInRight  shadow-lg shadow-emerald-700 "
               ></motion.video>
+
               <div className="m-10 flex items-center overflow-hidden">
                 <motion.button
                   whileHover={{ scale: 1.1 }}
@@ -182,6 +123,7 @@ export const Projects = ({ reference }) => {
                   <FaAngleRight />
                 </motion.button>
               </div>
+
             </div>
           </div>
         ) : (
