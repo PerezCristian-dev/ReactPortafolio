@@ -13,7 +13,7 @@ export const Footer = () => {
     <IconContext.Provider
       value={{ className: "react-icon hover:text-emerald-500" }}
     >
-      <div className="flex flex-col-reverse h-96 xl:h-10  bg-black text-white justify-center p-20 items-center text-center">
+      <footer className="flex flex-col-reverse h-96 xl:h-10  bg-black text-white justify-center p-20 items-center text-center">
         <div className="flex">
           <a
             href="https://www.linkedin.com/in/cristian-perez-425ab2237/"
@@ -47,7 +47,7 @@ export const Footer = () => {
           &copy; 2022 with <b className="text-emerald-500">♥</b>{" "}
           Christheadvenger
         </p>
-      </div>
+      </footer>
     </IconContext.Provider>
   );
 };

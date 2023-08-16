@@ -1,4 +1,4 @@
-import { Education, Projects, Skills, Contact } from "./components/body";
+import { Education, Projects, Contact, About } from "./components/body";
 import { Footer } from "./components/footer";
 import { NavBar, Banner } from "./components/header";
 import { SideBar } from "./components/sidebar/SideBar";
@@ -31,6 +31,7 @@ export const App = () => {
 
   const home = useRef(null);
   const about = useRef(null);
+
   const projects = useRef(null);
   const education = useRef(null);
   const contact = useRef(null);
@@ -44,13 +45,14 @@ export const App = () => {
 
   return (
     <>
+    <header>
       <SideBar
         elements={{ home, about, projects, education, contact }}
         onscroll={scrollToSection}
       />
       <NavBar />
       {/* <section ref={scrollRef}> */}
-
+      </header>
       <ScrollContainer>
         <ScrollPage page={0}>
           <Animator animation={Zoom()}>
@@ -59,7 +61,8 @@ export const App = () => {
         </ScrollPage>
       </ScrollContainer>
 
-      <Skills reference={about} />
+      <About reference={about} />
+      {/* <Skills reference={skills} /> */}
 
       <Projects reference={projects} />
 

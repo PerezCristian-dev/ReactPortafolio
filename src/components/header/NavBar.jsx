@@ -19,11 +19,11 @@ export const NavBar = () => {
 
   return (
     <>
-      <div className="flex-col xl:flex-row xl:absolute z-10 p-10 xl:py-10 xl:px-36 w-full flex justify-between items-center animate__animated animate__backInDown)">
-        <h1 className="hidden xl:block font-bold text-emerald-500 text-3xl my-2">
+      <nav className="flex-col xl:flex-row xl:absolute z-10 p-10 xl:py-10 xl:px-36 w-full flex justify-between items-center animate__animated animate__backInDown">
+        {/* <h1 className="hidden xl:block font-bold text-emerald-500 text-3xl my-2">
           {"<dev>CRISTIAN</dev>"}
-        </h1>
-        {
+        </h1> */}
+        {/* {
           <div
             onClick={toggleMode}
             className="flex items-center transition-all duration-100 overflow-hidden"
@@ -41,9 +41,9 @@ export const NavBar = () => {
             <FaMoon />
             <h1>Dark</h1>
           </div>
-        }
+        } */}
         {/* <button className=" bg-emerald-500 p-1 ml-3 hover:font-bold hover:text-emerald-500">Contact Me</button> */}
-      </div>
+      </nav>
     </>
   );
 };

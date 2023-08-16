@@ -3,7 +3,8 @@ export const data = {
     {
       id: 1,
       title: "Alura BarberShop",
-      description: "Website created using HTML5, CSS3 and JS as part of my learning curve.",
+      description:
+        "Website created using HTML5, CSS3 and JS as part of my learning curve.",
       videoURL: "../1.mp4",
       active: true,
       technologies: [
@@ -416,6 +417,48 @@ export const data = {
       completion: 5,
       imgUrl:
         "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
+    },
+  ],
+  experience: [
+    {
+      id: 1,
+      current: true,
+      company:"Valego Consulting",
+      position: "Software Developer",
+      description: "In charge of building and maintaining web applications using HTML, CSS, Tailwind CSS, Bootstrap and TypeScript to create responsive, user-friendly web pages and web applications. Develop and integrate APIs to connect front-end applications with back-end services utilizing Node.js and PostgreSQL as a database to store and retrieve data, and TypeORM to map database entities to TypeScript classes",
+      technologies: ["React", "Redux", "JavaScript", "Bootstrap"],
+      from:"Apr 2023",
+      to:null,
+    },
+    {
+      id: 2,
+      current: false,
+      company:"Media Revolution",
+      position: "Full-Stack Developer",
+      description: "In charge of building and maintaining web applications using HTML, CSS, Tailwind CSS, Bootstrap and TypeScript to create responsive, user-friendly web pages and web applications. Develop and integrate APIs to connect front-end applications with back-end services utilizing Node.js and PostgreSQL as a database to store and retrieve data, and TypeORM to map database entities to TypeScript classes",
+      technologies: ["NextJS", "React", "Redux", "TypeScript", "NodeJS"],
+      from:"Jan 2023",
+      to:"Apr 2023"
+    },
+    {
+      id: 3,
+      current: false,
+      company:"Outplex",
+      position: "Workforce Analyst",
+      description: "In charge of analyzing historical data, seasonal trends, and other relevant factors to develop forecasts for future workforce needs and use that data to create schedules for employees, ensuring that there is sufficient staffing to meet business demands while avoiding overstaffing or understaffing. In charge of tracking key metrics such as attendance, adherence to schedule, and productivity and work closely with the management team to identify areas for improvement and develop strategies to improve employee performance.",
+      technologies: ["PowerBI", "PowerQuery", "Excel", "VBA", "TableU"],
+      from:"Jun 2020",
+      to:"Oct 2022"
+    },
+    {
+      id: 4,
+      current: false,
+      company:"Newtech Global",
+      position: "Web Developer & Reporting Analyst",
+      description: "I was responsible for creating reports that provided meaningful insights to the management team. This involved gathering data from various sources and analyzing it to create reports that were accurate, concise, and visually appealing as well as maintaining the front-end apps, ensuring that they functioned properly and were user-friendly, and other responsibilities Including but not limited to troubleshooting and resolving any issues that arose, as well as implementing new features and updates.",
+      technologies: ["React", "JavaScript", "CSS", "HTML", "VBA"],
+      from:"Feb 2017",
+      to:"Jul 2019"
     },
   ],
   pages: [
