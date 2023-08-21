@@ -50,7 +50,7 @@ export const App = () => {
         elements={{ home, about, projects, education, contact }}
         onscroll={scrollToSection}
       />
-      <NavBar />
+      {/* <NavBar /> */}
       {/* <section ref={scrollRef}> */}
       </header>
       <ScrollContainer>

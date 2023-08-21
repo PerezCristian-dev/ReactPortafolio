@@ -19,7 +19,7 @@ export const SideBar = ({ elements, onscroll }) => {
           "react-icon group-hover:text-emerald-500 bg-black relative z-50",
       }}
     >
-      <nav className="bg-black xl:bg-transparent w-full xl:w-auto justify-between flex xl:block fixed bottom-0 z-50 p-4 xl:m-4 animate__animated animate__backInUp">
+      <nav className="bg-black xl:bg-transparent w-full xl:w-auto justify-between flex xl:block fixed bottom-0 z-50 px-4 py-2 xl:m-4 animate__animated animate__backInUp">
         <NavLink
           to={"/"}
           className={({ isActive }) =>

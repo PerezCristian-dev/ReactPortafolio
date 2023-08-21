@@ -310,7 +310,7 @@
 
   .banner-space-bg {
     z-index: 4;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     height: 1px;
