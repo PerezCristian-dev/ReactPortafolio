@@ -28,7 +28,7 @@ export const Experience = () => {
   console.log({ pages });
 
   return (
-    <div className="flex flex-col p-10 h-[650px] overflow-hidden justify-between">
+    <div className="flex flex-col py-6 xl:p-10 xl:h-[650px] overflow-hidden justify-between">
       <div className="h-75">
         {experience.map((exp) => {
           return (

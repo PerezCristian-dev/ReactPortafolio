@@ -4,7 +4,7 @@ const { education } = data;
 
 export const Education = () => {
   return (
-    <div className="text-white rounded-lg p-2 xl:py-10 xl:px-10">
+    <div className="text-white rounded-lg p-2 xl:py-10 xl:px-10 py-6">
       <div className="flex flex-wrap justify-between xl:justify-center">
         {education.map((edu) => (
           <div

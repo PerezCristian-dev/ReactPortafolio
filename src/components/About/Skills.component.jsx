@@ -5,7 +5,7 @@ const { skills } = data;
 export const Skills = () => {
   return (
     <div className="w-full">
-      <div className="flex flex-wrap justify-between xl:justify-center p-10">
+      <div className="flex flex-wrap justify-between xl:justify-center py-6 px-5 xl:p-10">
         {skills.map((skill, index) => {
           return (
             <span

@@ -14,7 +14,7 @@ export const Banner = ({ reference }) => {
         <div className="relative top-[-100px] left-[150px] xl:top-[-250px] xl:left-[250px] z-0 circle"></div>
       </div>
 
-      <div className="relative mt-20 z-50 text-2xl xl:text-5xl animate__animated animate__backInLeft xl:absolute xl:top-[22%]">
+      <div className="relative mt-32 z-50 text-2xl xl:text-5xl animate__animated animate__backInLeft xl:absolute xl:top-[22%]">
         <h1 className="text-2xl xl:text-6xl">
           Hi there, I'm <b className="colorswitch">Cristian</b>
         </h1>
@@ -50,7 +50,7 @@ export const Banner = ({ reference }) => {
           </a>
         </div>
       </div>
-      <div className="absolute w-[250px] h-[265px] bottom-[210px] z-10 left-[50%] translate-x-[-50%] xl:w-[450px] xl:h-[450px] xl:translate-x-[10rem] xl:bottom-[300px]">
+      <div className="absolute w-[250px] h-[265px] bottom-[225px] z-10 left-[50%] translate-x-[-50%] xl:w-[450px] xl:h-[450px] xl:translate-x-[10rem] xl:bottom-[300px]">
         <div className="relative top-[-280px] left-[600px] w-[80px] h-[80px] xl:top-[-150px] xl:left-[680px] xl:w-[150px] xl:h-[150px]">
           <img
             src="../react.png"
