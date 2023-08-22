@@ -273,7 +273,7 @@ export const data = {
       name: "Front End Developer",
       description: "Web Site Creation",
       imgUrl:
-        "http://beproweb.com/wp-content/uploads/2022/04/dynamic-web-pages.jpg",
+        "https://techfest.org/static/resources/workshops/pics/Web%20Dev.jpg",
     },
     {
       id: 2,
@@ -308,7 +308,7 @@ export const data = {
       name: "Google Sheets",
       description: "Google Spreadsheets",
       imgUrl:
-        "https://mc-bcdcbf23-962c-44b4-ae98-627791-cdn-endpoint.azureedge.net/-/media/project/emea/es/hero-video-stills/servicios-data-analytics-es-poster.jpg?cx=0.5&cy=0.5&cw=2000&ch=1124&hash=D7744D891510E4AA1EE522299298099E",
+        "https://miro.medium.com/v2/resize:fit:717/1*pHglcoa-BSouiNT7R2p9yQ.png",
     },
   ],
   education: [
