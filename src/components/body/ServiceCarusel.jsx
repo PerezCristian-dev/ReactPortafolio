@@ -52,7 +52,7 @@ export const ServiceCarusel = () => {
       loopFillGroupWithBlank={false}
       centeredSlides={true}
       autoplay={{
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -65,18 +65,16 @@ export const ServiceCarusel = () => {
       {services.map((service) => {
         return (
           <SwiperSlide key={service.id}>
-            <div className=" overflow-hidden animate__animated animate__backInRight w-[95%] h-[425px] m-2 rounded-xl shadow-2xl bg-project text-white">
-              <img
-                src={service.imgUrl}
-                alt={service.name}
-                className="w-full h-[60%]"
-              />
-              <div className="flex flex-col items-center justify-center h-[40%]">
-                <h2 className="font-bold mt-2">{service.name}</h2>
-                <p className="px-5 my-1 text-center">{service.description}</p>
-                <button className="bg-emerald-500 p-2 m-2 rounded-lg animate-pulse">
-                  Learn More
-                </button>
+            <div className="card w-[85%] glass h-[400px]">
+              <figure>
+                <img src={service.imgUrl} alt={service.name} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{service.name}</h2>
+                <p>{service.description}</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Learn now!</button>
+                </div>
               </div>
             </div>
           </SwiperSlide>

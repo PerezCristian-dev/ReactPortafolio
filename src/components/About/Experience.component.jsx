@@ -40,7 +40,7 @@ export const Experience = () => {
                 x: { type: "spring", stiffness: 300, damping: 30 },
                 opacity: { duration: 0.2 },
               }}
-              className="card w-98 bg-base-100 shadow-xl mx-2 mb-2"
+              className="card w-98 bg-base-100 shadow-xl mx-2 mb-2 xl:h-[250px]"
             >
               <div className="card-body">
                 <div className="flex justify-between items-center mb-2">

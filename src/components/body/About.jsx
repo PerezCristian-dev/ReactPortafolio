@@ -31,23 +31,22 @@ export const About = ({ reference }) => {
   return (
     <section
       ref={reference}
-      className="bg-gray-900 flex flex-col xl:px-32 xl:snap-start xl:h-screen w-screen px-2 py-4"
+      className="bg-gray-900 flex flex-col xl:snap-start w-screen px-60 py-12"
       id="#about"
     >
       {/* <div className="circle z-0 relative"></div> */}
 
-      <div className="flex flex-col xl:flex-row justify-around items-center h-full">
-        <div className="flex justify-center items-center xl:h-full">
-          <img
-            src="../aboutpic.png"
-            className="rounded-xl h-[100px] xl:h-[60%] shadow-xl"
-          />
-        </div>
-
-        <div className="xl:w-[50%] flex flex-col xl:h-full items-center xl:mt-[200px]">
+      <div className="flex flex-col xl:flex-row justify-around items-center ">
+        <div className="xl:w-[100%] flex flex-col xl:h-full items-center">
           <div className="flex flex-col justify-center items-center">
-            <span className="p-2 mb-4 font-bold text-4xl">About Me</span>
-            <p className="text-sm xl:text-2xl text-center p-10  h-full">
+            <span className="p-2 mb-1 font-bold text-4xl">About Me</span>
+            <div className="flex justify-center items-center xl:h-full">
+              <img
+                src="../aboutpic.png"
+                className="rounded-xl h-[100px] xl:h-[500px] shadow-xl my-4"
+              />
+            </div>
+            <p className="text-sm xl:text-2xl text-center h-full pb-8 px-5">
               I'm <b className="colorswitch"> Cristian Perez</b> a highly
               skilled full stack developer and data analyst with 3 years of
               experience in the software. I’m passionate about building
