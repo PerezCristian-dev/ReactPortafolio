@@ -97,7 +97,7 @@ export const Projects = ({ reference }) => {
                   whileTap={{ scale: 0.9 }}
                   onClick={() => handleBackward(project.id)}
                   className={
-                    "bg-black h-10 xl:h-[50px] xl:w-[50px] px-4 rounded-xl hover:text-primary"
+                    "bg-black p-2 border-[1px]  xl:h-[50px] xl:w-[50px]  rounded-xl hover:text-primary"
                   }
                 >
                   <FaAngleLeft />
@@ -107,7 +107,7 @@ export const Projects = ({ reference }) => {
                   <div
                     className={`${
                       project.active ? "btn-primary" : "bg-black"
-                    } w-4 h-4 xl:w-10 xl:h-10 mx-[7px] my-0 xl:mx-2  rounded-md xl:rounded-lg hover:bg-primary`}
+                    } w-4 h-4 xl:w-10 xl:h-10 mx-[7px] my-0 xl:mx-2  border rounded-md xl:rounded-lg hover:bg-primary`}
                     key={project.id}
                     onClick={() => handleSlideClick(project.id)}
                   ></div>
@@ -117,7 +117,7 @@ export const Projects = ({ reference }) => {
                   whileTap={{ scale: 0.9 }}
                   onClick={() => handleForward(project.id)}
                   className={
-                    "bg-black h-10 xl:h-[50px] xl:w-[50px] px-4 rounded-xl hover:text-primary"
+                    "bg-black p-2 border-[1px] xl:h-[50px] xl:w-[50px] rounded-xl hover:text-primary"
                   }
                 >
                   <FaAngleRight />

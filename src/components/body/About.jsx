@@ -31,7 +31,7 @@ export const About = ({ reference }) => {
   return (
     <section
       ref={reference}
-      className="bg-gray-900 flex flex-col xl:snap-start w-screen px-60 py-12"
+      className="bg-gray-900 flex flex-col xl:snap-start w-screen p-4 xl:px-60 xl:py-12"
       id="#about"
     >
       {/* <div className="circle z-0 relative"></div> */}

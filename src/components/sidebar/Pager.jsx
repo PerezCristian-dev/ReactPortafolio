@@ -42,7 +42,7 @@ export const Pager = () => {
             x: { type: "spring", stiffness: 300, damping: 30 },
             opacity: { duration: 0.2 },
           }}
-          className="fixed bottom-28 bg-black p-4 rounded-full xl:bottom-4 right-4 w-auto z-50 "
+          className="fixed bottom-20 border bg-black p-2 rounded-full xl:bottom-4 right-4 w-auto z-50 "
         >
           <span onClick={handleIncreaseScroll} className="transition-all">
             <FaAngleUp />
