@@ -15,36 +15,44 @@ export const SideBar = ({ elements, onscroll }) => {
   return (
     <IconContext.Provider
       value={{
-        className:
-          "react-icon group-hover:text-emerald-500 bg-black relative z-50",
+        className: "group-hover:text-primary bg-black relative z-50",
       }}
     >
       <nav className="bg-black xl:bg-transparent w-full xl:w-auto justify-between flex xl:block fixed bottom-0 z-50 px-4 py-2 xl:m-4 animate__animated animate__backInUp">
         <NavLink
-          to={"/"}
-          className={({ isActive }) =>
-            isActive ? "text-emerald-500" : "text-white"
+          to={"home"}
+          className={({ isActive, isPending }) =>
+            isActive ? "text-primary" : "text-white"
           }
           onClick={() => onscroll(home)}
         >
-          <button className="flex items-center text-white rounded-lg xl:my-2 group xl:hover:menuHover2">
-            <FaHome />
+          <button className="flex items-center rounded-lg xl:my-2 group xl:hover:menuHover2">
+            <div className="p-3 flex rounded-lg bg-black text-3xl">
+              <FaHome />
+            </div>
             {
-              <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
+              <h2 className="hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-primary relative z-0">
                 Home
               </h2>
             }
           </button>
         </NavLink>
-        <NavLink to={"about"}>
+        <NavLink
+          to={"about"}
+          className={({ isActive }) =>
+            isActive ? "text-primary" : "text-white"
+          }
+        >
           <button
             onClick={() => onscroll(about)}
-            className={`flex items-center text-emerald-500 rounded-lg my-2 group xl:hover:menuHover2 xl:flex`}
+            className="flex items-center rounded-lg xl:my-2 group xl:hover:menuHover2"
           >
-            <FaUser />
+            <div className="p-3 flex rounded-lg bg-black text-3xl">
+              <FaUser />
+            </div>
             {
               <h2
-                className={` hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0`}
+                className={` hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-primary relative z-0`}
               >
                 About Me
               </h2>
@@ -52,20 +60,27 @@ export const SideBar = ({ elements, onscroll }) => {
           </button>
         </NavLink>
 
-        <NavLink to={"projects"}>
+        <NavLink
+          to={"projects"}
+          className={({ isActive }) =>
+            isActive ? "text-primary" : "text-white"
+          }
+        >
           <button
             onClick={() => onscroll(projects)}
-            className="flex items-center text-white rounded-lg my-2 group xl:hover:menuHover2"
+            className="flex items-center rounded-lg xl:my-2 group xl:hover:menuHover2"
           >
-            <FaBriefcase />
+            <div className="p-3 flex rounded-lg bg-black text-3xl">
+              <FaBriefcase />
+            </div>
             {
-              <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
+              <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-primary relative z-0">
                 Projects
               </h2>
             }
           </button>
         </NavLink>
-
+        {/* 
         <NavLink to={education}>
           <button
             onClick={() => onscroll(education)}
@@ -73,24 +88,33 @@ export const SideBar = ({ elements, onscroll }) => {
           >
             <FaGraduationCap />
             {
-              <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
+              <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-primary relative z-0">
                 Education
               </h2>
             }
           </button>
-        </NavLink>
+        </NavLink> */}
 
-        <button
-          onClick={() => onscroll(contact)}
-          className="flex items-center text-white rounded-lg my-2 group xl:hover:menuHover2"
-        >
-          <FaEnvelopeOpenText />
-          {
-            <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-emerald-500 relative z-0">
-              Contact Me
-            </h2>
+        <NavLink
+          to={"contact"}
+          className={({ isActive }) =>
+            isActive ? "text-primary" : "text-white"
           }
-        </button>
+        >
+          <button
+            onClick={() => onscroll(contact)}
+            className="flex items-center rounded-lg xl:my-2 group xl:hover:menuHover2"
+          >
+            <div className="p-3 flex rounded-lg bg-black text-3xl">
+              <FaEnvelopeOpenText />
+            </div>
+            {
+              <h2 className=" hidden transition-all items-center xl:oculto group-hover:menuHover group-hover:text-primary relative z-0">
+                Contact Me
+              </h2>
+            }
+          </button>
+        </NavLink>
       </nav>
     </IconContext.Provider>
   );
