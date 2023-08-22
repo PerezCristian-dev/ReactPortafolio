@@ -45,7 +45,7 @@ export const Contact = ({ reference }) => {
       ref={reference}
       className="flex flex-col  justify-around p-4 xl:p-28 text-white items-center"
     >
-      <h2 className="uppercase font-bold text-emerald-500 text-xl xl:text-3xl py-4 xl:h-auto">
+      <h2 className="font-bold colorswitch text-xl xl:text-3xl py-4 xl:h-auto">
         Contact Me
       </h2>
       <div className="xl:flex justify-center items-center p-4">
@@ -62,7 +62,7 @@ export const Contact = ({ reference }) => {
               type="text"
               value={form.name}
               onChange={handleChange}
-              className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 xl:mb-4"
+              className="text-sm text-primary px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 xl:mb-4"
             />
             <label htmlFor="email">Your Email</label>
             <input
@@ -70,7 +70,7 @@ export const Contact = ({ reference }) => {
               type="email"
               value={form.email}
               onChange={handleChange}
-              className="text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 xl:mb-4"
+              className="text-sm text-primary px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 xl:mb-4"
             />
             <label htmlFor="fullname">Your Message</label>
             <textarea
@@ -80,11 +80,11 @@ export const Contact = ({ reference }) => {
               value={form.message}
               onChange={handleChange}
               rows="10"
-              className="h-24 xl:h-[40%] text-sm text-emerald-700 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 xl:mb-4"
+              className="h-24 xl:h-[40%] text-sm text-primary px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-emerald-500 xl:mb-4"
             />
             <button
               type="submit"
-              className="w-full flex justify-center bg-emerald-500 my-4 hover:bg-emerald-700 text-gray-100 p-3  rounded-lg tracking-wide font-semibold  cursor-pointer transition ease-in duration-500"
+              className="w-full flex justify-center btn-primary my-4 hover:btn-secondary p-3  rounded-lg tracking-wide font-semibold  cursor-pointer transition ease-in duration-200"
             >
               Send Message
             </button>
