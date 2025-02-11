@@ -316,9 +316,9 @@ export const data = {
       id: 1,
       institution: "UTESA",
       description: "Computer Science",
-      status: "On-going",
+      status: "Completed",
       certificate: "",
-      completion: 70,
+      completion: 100,
       imgUrl:
         "https://i.pinimg.com/originals/e6/25/a8/e625a8b75f197bcb8a6066e34135fab9.gif",
     },
