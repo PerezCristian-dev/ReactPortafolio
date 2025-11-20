@@ -53,7 +53,7 @@ export const Banner = ({ reference }: BannerProps) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-center lg:text-left space-y-6 order-2 lg:order-1"
+            className="text-center lg:text-left space-y-6 order-2 lg:order-1 mb-10 lg:mb-0"
           >
             <motion.div variants={itemVariants}>
               <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
@@ -142,7 +142,7 @@ export const Banner = ({ reference }: BannerProps) => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative order-1 lg:order-2"
+            className="relative order-1 lg:order-2 mt-10 lg:mt-0"
           >
             <div className="relative w-64 h-64 md:w-96 md:h-96 mx-auto">
               {/* Glow effect - animated */}
