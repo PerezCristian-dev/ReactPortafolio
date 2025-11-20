@@ -320,7 +320,7 @@ export const data = {
       certificate: "",
       completion: 100,
       imgUrl:
-        "https://i.pinimg.com/originals/e6/25/a8/e625a8b75f197bcb8a6066e34135fab9.gif",
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2310b981'/%3E%3Ctext x='50' y='60' font-size='40' text-anchor='middle' fill='white' font-weight='bold'%3EU%3C/text%3E%3C/svg%3E",
     },
     {
       id: 2,
@@ -331,7 +331,7 @@ export const data = {
         "https://app.aluracursos.com/user/PerezCristian/degree-programacion-primeros-pasos-grupo2-one-15440/certificate",
       completion: 100,
       imgUrl:
-        "https://i0.wp.com/seccionnoticias.net.pe/wp-content/uploads/2021/11/63c9b236-e805-44dd-9035-da2f7aa2fd5f.png?fit=534%2C322&ssl=1",
+        "https://avatars.githubusercontent.com/u/4975968?s=200&v=4",
     },
     {
       id: 3,
@@ -342,7 +342,7 @@ export const data = {
         "https://app.aluracursos.com/user/PerezCristian/degree-frontend-grupo2-one-15441/certificate",
       completion: 100,
       imgUrl:
-        "https://i0.wp.com/seccionnoticias.net.pe/wp-content/uploads/2021/11/63c9b236-e805-44dd-9035-da2f7aa2fd5f.png?fit=534%2C322&ssl=1",
+        "https://avatars.githubusercontent.com/u/4975968?s=200&v=4",
     },
     {
       id: 4,
@@ -353,7 +353,7 @@ export const data = {
         "https://app.aluracursos.com/user/PerezCristian/degree-javaoo-grupo2-one-15470/certificate",
       completion: 100,
       imgUrl:
-        "https://i0.wp.com/seccionnoticias.net.pe/wp-content/uploads/2021/11/63c9b236-e805-44dd-9035-da2f7aa2fd5f.png?fit=534%2C322&ssl=1",
+        "https://avatars.githubusercontent.com/u/4975968?s=200&v=4",
     },
     {
       id: 5,
@@ -364,7 +364,7 @@ export const data = {
         "https://app.aluracursos.com/user/PerezCristian/degree-empreendimiento-digital-15446/certificate",
       completion: 100,
       imgUrl:
-        "https://i0.wp.com/seccionnoticias.net.pe/wp-content/uploads/2021/11/63c9b236-e805-44dd-9035-da2f7aa2fd5f.png?fit=534%2C322&ssl=1",
+        "https://avatars.githubusercontent.com/u/4975968?s=200&v=4",
     },
     {
       id: 6,
@@ -375,7 +375,7 @@ export const data = {
         "https://www.freecodecamp.org/certification/fcc90c9a909-a72f-4f2e-a20c-b74d1ce77b70/javascript-algorithms-and-data-structures",
       completion: 100,
       imgUrl:
-        "https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg",
+        "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
     },
     {
       id: 7,
@@ -383,10 +383,10 @@ export const data = {
       description: "React: Expert",
       status: "Completed",
       certificate:
-        "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
+        "https://about.udemy.com/wp-content/uploads/2021/06/Udemy-Logo.png",
       completion: 100,
       imgUrl:
-        "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
+        "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
     },
     {
       id: 8,
@@ -396,7 +396,7 @@ export const data = {
       certificate: "",
       completion: 50,
       imgUrl:
-        "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
+        "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
     },
     {
       id: 9,
@@ -406,7 +406,7 @@ export const data = {
       certificate: "",
       completion: 100,
       imgUrl:
-        "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
+        "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
     },
     {
       id: 10,
@@ -416,7 +416,7 @@ export const data = {
       certificate: "",
       completion: 5,
       imgUrl:
-        "https://media.glassdoor.com/sqll/434871/udemy-squareLogo-1627922062808.png",
+        "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
     },
   ],
   experience: [
