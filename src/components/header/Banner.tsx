@@ -177,7 +177,7 @@ export const Banner = ({ reference }: BannerProps) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.8, duration: 0.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden lg:block"
       >
         <a href="#about" className="flex flex-col items-center gap-2 text-base-content/50 hover:text-primary transition-colors">
           <span className="text-sm">Scroll down</span>
