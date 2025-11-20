@@ -394,7 +394,7 @@ export const data = {
       description: "React: PRO",
       status: "On-going",
       certificate: "",
-      completion: 50,
+      completion: 100,
       imgUrl:
         "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
     },
