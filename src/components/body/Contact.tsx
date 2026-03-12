@@ -1,6 +1,7 @@
 import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { env } from "../../config/env";
 
 interface ContactProps {
   reference?: React.RefObject<HTMLElement>;
@@ -37,10 +38,10 @@ export const Contact = ({ reference }: ContactProps) => {
 
     try {
       await emailjs.send(
-        "service_rx6yp75",
-        "template_quptqrp",
+        env.emailjs.serviceId,
+        env.emailjs.templateId,
         formData,
-        "j1aIwyxn4IGORSgLX"
+        env.emailjs.publicKey
       );
 
       setIsSubmitted(true);

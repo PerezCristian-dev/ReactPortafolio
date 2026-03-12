@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --swiper-theme-color: #10b981;
+  --swiper-navigation-size: 20px;
+}
+
+.projects-swiper .swiper-button-next,
+.projects-swiper .swiper-button-prev {
+  display: none;
+}
+
 @layer base {
   /* Modern CSS Reset */
   *,

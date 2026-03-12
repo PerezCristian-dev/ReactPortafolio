@@ -7,6 +7,8 @@ export const data = {
         "Website created using HTML5, CSS3 and JS as part of my learning curve.",
       videoURL: "../1.mp4",
       active: true,
+      liveUrl: "",
+      githubUrl: "",
       technologies: [
         {
           id: 1.1,
@@ -32,6 +34,8 @@ export const data = {
         "WebApp created using HTML5, CSS3 and JS, using some libreries such as React, Tailwind and Material UI.",
       videoURL: "../8.mp4",
       active: false,
+      liveUrl: "",
+      githubUrl: "",
       technologies: [
         {
           id: 2.1,
@@ -69,9 +73,11 @@ export const data = {
       id: 3,
       title: "App Store",
       description:
-        "App Store created using HTML5, CSS3, JavaScript appliying Grid and Flexbox methods.",
+        "App Store created using HTML5, CSS3, JavaScript applying Grid and Flexbox methods.",
       videoURL: "../3.mp4",
       active: false,
+      liveUrl: "",
+      githubUrl: "",
       technologies: [
         {
           id: 3.1,
@@ -94,22 +100,24 @@ export const data = {
       id: 4,
       title: "Fruta&Fruto Landing Page",
       description:
-        "Website created using HTML5, CSS3, JavaScript appliying Grid and Flexbox methods.",
+        "Website created using HTML5, CSS3, JavaScript applying Grid and Flexbox methods.",
       videoURL: "../4.mp4",
       active: false,
+      liveUrl: "",
+      githubUrl: "",
       technologies: [
         {
-          id: 3.1,
+          id: 4.1,
           tech: "html5",
           url: "../html.svg",
         },
         {
-          id: 3.2,
+          id: 4.2,
           tech: "css3",
           url: "../css.svg",
         },
         {
-          id: 3.3,
+          id: 4.3,
           tech: "JavaScript",
           url: "../js.svg",
         },
@@ -119,22 +127,24 @@ export const data = {
       id: 5,
       title: "Mini Alura Site",
       description:
-        "WebSite created using HTML5, CSS3, JavaScript appliying Grid and Flexbox methods.",
+        "WebSite created using HTML5, CSS3, JavaScript applying Grid and Flexbox methods.",
       videoURL: "../5.mp4",
       active: false,
+      liveUrl: "",
+      githubUrl: "",
       technologies: [
         {
-          id: 3.1,
+          id: 5.1,
           tech: "html5",
           url: "../html.svg",
         },
         {
-          id: 3.2,
+          id: 5.2,
           tech: "css3",
           url: "../css.svg",
         },
         {
-          id: 3.3,
+          id: 5.3,
           tech: "JavaScript",
           url: "../js.svg",
         },
@@ -144,22 +154,24 @@ export const data = {
       id: 6,
       title: "Apeperia",
       description:
-        "WebSite created using HTML5, CSS3, JavaScript appliying Grid and Flexbox methods.",
+        "WebSite created using HTML5, CSS3, JavaScript applying Grid and Flexbox methods.",
       videoURL: "../7.mp4",
       active: false,
+      liveUrl: "",
+      githubUrl: "",
       technologies: [
         {
-          id: 3.1,
+          id: 6.1,
           tech: "html5",
           url: "../html.svg",
         },
         {
-          id: 3.2,
+          id: 6.2,
           tech: "css3",
           url: "../css.svg",
         },
         {
-          id: 3.3,
+          id: 6.3,
           tech: "JavaScript",
           url: "../js.svg",
         },
@@ -199,70 +211,70 @@ export const data = {
     {
       id: 5,
       name: "React",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "98%",
       imgUrl: "../react.png",
     },
     {
       id: 6,
       name: "Redux",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "95%",
       imgUrl: "../redux.png",
     },
     {
       id: 7,
       name: "Tailwind",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "95%",
       imgUrl: "../tail.png",
     },
     {
       id: 8,
       name: "Bootstrap",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "95%",
       imgUrl: "../bootstrap.png",
     },
     {
       id: 9,
       name: "MongoDB",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "80%",
       imgUrl: "../mongo.webp",
     },
     {
       id: 10,
       name: "SQL",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "80%",
       imgUrl: "../mysql.png",
     },
     {
       id: 11,
       name: "Jira",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "90%",
       imgUrl: "../jira.png",
     },
     {
       id: 12,
       name: "Firebase",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "80%",
       imgUrl: "../firebase.png",
     },
     {
       id: 13,
       name: "Figma",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "90%",
       imgUrl: "../figma.svg",
     },
     {
       id: 14,
       name: "Photoshop",
-      description: "Java IO, Streams, Reader, Writers, Collections",
+      description: "",
       percentange: "90%",
       imgUrl: "../ps.png",
     },
