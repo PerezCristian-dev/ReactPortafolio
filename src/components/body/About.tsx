@@ -61,11 +61,17 @@ export const About = ({ reference }: AboutProps) => {
           >
             <div className="glass-card p-8 sticky top-24">
               <div className="aspect-square w-full mb-6 rounded-2xl overflow-hidden border-4 border-primary/20">
-                <img
-                  src="/aboutpic.png"
-                  alt="Cristian Perez"
-                  className="w-full h-full object-cover"
-                />
+                <picture>
+                  <source srcSet="/aboutpic.webp" type="image/webp" />
+                  <img
+                    src="/aboutpic.png"
+                    alt="Cristian Perez"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    width="800"
+                    height="800"
+                  />
+                </picture>
               </div>
 
               <h3 className="text-2xl font-bold mb-4">

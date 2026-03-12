@@ -135,11 +135,17 @@ export const Contact = ({ reference }: ContactProps) => {
             </div>
 
             <div className="hidden lg:block">
-              <img
-                src="/Portafolio BG-Image.png"
-                alt="Contact illustration"
-                className="w-full rounded-2xl opacity-80"
-              />
+              <picture>
+                <source srcSet="/Portafolio BG-Image.webp" type="image/webp" />
+                <img
+                  src="/Portafolio BG-Image.png"
+                  alt="Contact illustration"
+                  className="w-full rounded-2xl opacity-80"
+                  loading="lazy"
+                  width="900"
+                  height="600"
+                />
+              </picture>
             </div>
           </motion.div>
 

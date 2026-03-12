@@ -153,7 +153,9 @@ export const Banner = ({ reference }: BannerProps) => {
                 {!imageLoaded && (
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 animate-pulse" />
                 )}
-                <img
+                <picture>
+                  <source srcSet="/profile-picture.webp" type="image/webp" />
+                  <img
                   src="/profile-picture.png"
                   alt="Cristian Perez - Full Stack Developer"
                   className={`w-full h-full object-cover transition-opacity duration-300 mix-blend-normal ${
@@ -162,9 +164,10 @@ export const Banner = ({ reference }: BannerProps) => {
                   style={{ backgroundColor: 'transparent' }}
                   onLoad={() => setImageLoaded(true)}
                   loading="eager"
-                  width="800"
-                  height="800"
+                  width="600"
+                  height="600"
                 />
+                </picture>
               </div>
             </div>
           </motion.div>
